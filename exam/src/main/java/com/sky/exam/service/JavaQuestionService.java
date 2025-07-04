@@ -19,13 +19,6 @@ public class JavaQuestionService  implements QuestionService{
         return newQuestion;
     }
 
-    /*@Override
-    public synchronized Question remove(String questionText, String answer) {
-        Question question = new Question(questionText, answer);
-        questions.remove(question);
-        return question;
-    }*/
-
     @Override
     public Question remove(String question, String answer) {
         Question questionToRemove = new Question(question, answer);
